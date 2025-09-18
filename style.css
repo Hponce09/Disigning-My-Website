@@ -1,4 +1,14 @@
 *{
     font-family: 'Courier New', Courier, monospace;
-    background-color: red;
+    background-color: rgb(14, 14, 228);
+
+}
+
+h1{
+    color: rgba(223, 11, 11, 0.669);
+    
+}
+
+body{
+    margin: 100px;
 }
