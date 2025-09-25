@@ -5,10 +5,11 @@
 }
 
 h1{
-    color: rgba(223, 11, 11, 0.669);
-    
+    color: rgba(198, 104, 104, 0.669);
+    font-family:cursive ;
 }
 
 body{
     margin: 100px;
+    
 }
