@@ -87,7 +87,7 @@ main #tarjetas{
 
 main #tarjetas div{
 
-    background-image: url(/Mi_primera_web/imagenes/logo.png);
+    background-image: url(imagenes/logo.png);
     background-size: cover;
     width: 350px;
     height: 200px;
