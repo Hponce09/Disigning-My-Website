@@ -56,7 +56,8 @@ main{
 }
 
 .info{
-    height: 400px;
+
+    height: 500px;
     padding-bottom:20px ;
     display: flex;
     flex-direction: row;
@@ -67,9 +68,10 @@ main{
 }
 
 .formulario{
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
 }
 
 .formato {
@@ -93,14 +95,27 @@ main{
     width: 100px;
 }
 
+.formulario iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
 .detalles{
-    width: 446px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    text-align: center;
+    float: right;
+    width: 45%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
 }
 
 .detalles  i {
+    
+    text-align: center;
     display: inline-block;
     width: 10px;             
     margin-right: 15px;        
