@@ -1,0 +1,138 @@
+*{ 
+   
+    box-sizing: border-box;
+    
+
+}
+
+h1{ font-size: 3.5em;
+padding-left: 10%;
+padding-right: 10%;
+}
+p{ font-size: 1.25em;}
+a{font-size: 1.5em;}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    background-color: white;
+}
+
+header  img{
+    width: 100px;
+}
+
+header a{
+    color: rgba(3, 3, 113, 0.751);
+    padding: 10px;
+    text-decoration: none;
+}
+
+body{ 
+    font-family: sans-serif;
+    background-color:#ddd;
+}
+
+main{
+
+}
+
+.banner {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   height: 300px;
+   width: 400px;
+   margin: auto;
+}
+
+.info{
+
+    height: 500px;
+    padding-bottom:20px ;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.formulario{
+    float: left;
+    width: 50%;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.formato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+.formulario .uno input{
+    display: flex;
+    gap: 10px;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    
+}
+
+.formato input[type="submit"] {
+    margin: auto;
+    width: 100px;
+}
+
+.formulario iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.detalles{
+    text-align: center;
+    float: right;
+    width: 45%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.detalles  i {
+    
+    text-align: center;
+    display: inline-block;
+    width: 10px;             
+    margin-right: 15px;        
+    font-size: 2rem;
+}
+
+.detalles  p {
+    padding-left: 5%;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+
+footer{
+    background-color: white;
+   text-align: center;
+   padding: 50px;
+}
