@@ -23,15 +23,48 @@ header{
     align-items: center;
     justify-content: space-between;
    
-    background-color: white;
+    background-color: #FFC72C;
 }
 
 header  img{
     width: 100px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+/* Animación del botón hamburguesa cuando está activo */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+
 header a{
-    color: rgba(3, 3, 113, 0.751);
+    color: #000000; /* Negro */
+    font-weight: 600; /* Negrita */
     padding: 10px;
     text-decoration: none;
 }
@@ -119,6 +152,189 @@ footer{
     margin: auto;
 }
 
+/* MEDIA QUERIES PARA TABLETS (481px - 768px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+
+    header {
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    header > div:first-child {
+        order: 1;
+    }
+
+    header > div:last-child {
+        order: 2;
+    }
+
+    header nav {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    header a {
+        padding: 8px;
+        font-size: 1.1em;
+    }
+
+    #banner {
+        flex-direction: column;
+    }
+
+    #banner img {
+        max-width: 100%;
+    }
+
+    #banner p {
+        font-size: 1.2em;
+        padding: 8%;
+    }
+
+    main #tarjetas {
+        justify-content: center;
+    }
+
+    main #tarjetas div {
+        width: 300px;
+        height: 180px;
+    }
+
+    footer {
+        padding: 30px;
+}
+}
+
+/* MEDIA QUERIES PARA MÓVILES (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 0.9em;
+    }
+
+    header {
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header > div:first-child {
+        order: 1;
+    }
+
+    header > button.hamburger {
+        order: 2;
+        margin-left: auto;
+    }
+
+    header > div:last-child {
+        order: 3;
+        width: 100%;
+    }
+
+    header img {
+        width: 70px;
+    }
+
+    /* Mostrar botón hamburguesa en móvil */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Menú de navegación móvil */
+      header nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 10px;
+                background-color: transparent;
+                position: static;
+                box-shadow: none;
+                transform: none;
+                transition: none;
+            }
+
+            header nav.active {
+                display: flex;
+            }
+
+            header a {
+                padding: 10px;
+                font-size: 0.9em;
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            header a:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+    #banner {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    #banner img {
+        max-width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    #banner p {
+        font-size: 1em;
+        padding: 5%;
+        text-align: justify;
+    }
+
+    main {
+        padding-top: 8%;
+    }
+
+    main #tarjetas {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        gap: 15px;
+    }
+
+    main #tarjetas div {
+        width: 100%;
+        max-width: 300px;
+        height: 150px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
 
 
 

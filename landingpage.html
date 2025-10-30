@@ -8,23 +8,48 @@
     <title>Document</title>
 </head>
 <body>
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('header nav');
+    
+    // Toggle del menú
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+    
+    // Cerrar menú al hacer click en un enlace
+    const navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            nav.classList.remove('active');
+        });
+    });
+});
+</script>
+
     <header class="container">
         <div>
             <img src="imagenes/logo.png" alt="">
         </div>
-        <div>
-            <nav>
-                
-                <a href="#">News</a>
-                <a href="#">Fixtures</a>
-                <a href="#">Tickets</a>
-                <a href="#">Shop</a>
-                <a href="#">Video</a>
-                <a href="#">Contact</a>
-                    
-            </nav>
+        
+        <!-- Botón hamburguesa -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+        
+        <nav>
+            <a href="landingpage.html">Landing Page</a>
+            <a href="index.html">Inicio</a>
+            <a href="#">Calendario</a>
+            <a href="#">Tienda</a>
+            <a href="#">Galeria</a>
+            <a href="contac.html">Contacto</a>
+        </nav>
     </header>
+
 
     <main class="container">
         <section id="hero-content">

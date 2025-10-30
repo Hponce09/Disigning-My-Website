@@ -23,7 +23,7 @@ header{
     align-items: center;
     justify-content: space-between;
    
-    background-color: white;
+   background-color: #FFC72C; /* Amarillo */
 }
 
 header  img{
@@ -31,7 +31,8 @@ header  img{
 }
 
 header a{
-    color: rgba(3, 3, 113, 0.751);
+     color: #000000; /* Negro */
+    font-weight: 600; /* Negrita */
     padding: 10px;
     text-decoration: none;
 }
@@ -135,4 +136,216 @@ footer{
     background-color: white;
    text-align: center;
    padding: 50px;
+}
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* Estilos para el menú hamburguesa (oculto por defecto) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: rgba(3, 3, 113, 0.751);
+    transition: all 0.3s ease;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+/* TABLETS (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    a {
+        font-size: 1.2em;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    /* Menú normal horizontal en tablets */
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    header a {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+
+    .banner {
+        width: 90%;
+        height: 250px;
+    }
+
+    .info {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .detalles {
+        width: 100%;
+        float: none;
+    }
+
+    .detalles i {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 35px 20px;
+    }
+}
+
+/* MÓVILES (máx 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        font-size: 1.1em;
+    }
+
+    /* Menú hamburguesa SOLO en móviles - AL EXTREMO DERECHO */
+    .menu-toggle {
+        display: flex;
+        margin-left: auto; /* Empuja la hamburguesa a la derecha */
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 15px 10px;
+        justify-content: space-between; /* Logo izquierda, hamburguesa derecha */
+    }
+
+    header img {
+        width: 70px;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        order: 3; /* El nav va después del logo y hamburguesa */
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header a {
+        padding: 12px;
+        font-size: 1em;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .banner {
+        width: 95%;
+        height: 200px;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .info {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    .formulario {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 25px;
+        float: none;
+    }
+
+    .formato {
+        gap: 15px;
+    }
+
+    .formulario .uno input {
+        font-size: 0.9rem;
+    }
+
+    .formato input[type="submit"] {
+        width: 80px;
+        font-size: 0.9rem;
+    }
+
+    .formulario iframe {
+        height: 200px;
+    }
+
+    .detalles {
+        width: 100%;
+        padding: 20px;
+        float: none;
+    }
+
+    .detalles i {
+        font-size: 1.3rem;
+        width: 8px;
+        margin-right: 10px;
+    }
+
+    .detalles p {
+        font-size: 0.9rem;
+        padding-left: 3%;
+    }
+
+    footer {
+        padding: 25px 15px;
+        font-size: 0.9em;
+    }
 }
