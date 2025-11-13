@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         <nav>
             <a href="landingpage.html">Landing Page</a>
-            <a href="index.html">Inicio</a>
             <a href="#">Calendario</a>
             <a href="#">Tienda</a>
             <a href="#">Galeria</a>
@@ -55,17 +54,43 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="banner">
 
-            <h2>CONTAC US</h2>
+            <picture>
+`                  
+                <!-- Imagen para móvil (hasta 480px) -->
+                  <source 
+                media="(max-width: 480px)" 
+                srcset="imagenes/pexels-markusspiske-114296.jpg">
+
+                  <!-- Imagen para tablet (481px - 768px) -->
+                <source 
+                media="(min-width: 481px) and (max-width: 768px)" 
+                srcset="imagenes/emilio-garcia-AWdCgDDedH0-unsplash.jpg">
+
+                <!-- Imagen para desktop (769px en adelante) -->
+                <source 
+                media="(min-width: 769px)" 
+                srcset="imagenes/pexels-oleksandr-plakhota-1270583835-34700058.jpg">
+                
+                  <!-- Imagen por defecto (fallback) -->
+                <img src="imagenes/jannik-mY2ZHBU6GRk-unsplash.jpg" alt="">
+
+            </picture>
+
+        </div>
+
+        <div class="slogan">
+            <h2>CONTACT US</h2>
             <p>
                 Da el primer paso hacia una formación de élite. Contáctanos hoy y agenda tu clase de prueba gratuita.
             </p>
-
         </div>
+        
         <div class="info">
 
             <div class="formulario">
                 
                 <div class="uno">
+                    <h2>Formulario de contato</h2>
                     <form class="formato">
                         <input type="text" name="name" placeholder="Name">
                         <input type="text" name="email" placeholder="Email">
@@ -112,6 +137,13 @@ document.addEventListener('DOMContentLoaded', function() {
     </main>
 
     <footer class="container">
+        <div class="redes-sociales">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <address>
+            Dirección: Calle Falsa 123
+        </address>
         <div>        
             <small>&copy; 2025 · Ilerna</small>
         </div>
