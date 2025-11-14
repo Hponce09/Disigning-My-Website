@@ -13,7 +13,7 @@ p{ font-size: 1.25em;}
 a{font-size: 1.5em;}
 
 .container{
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
     
 }
@@ -23,7 +23,7 @@ header{
     align-items: center;
     justify-content: space-between;
    
-   background-color: #FFC72C; /* Amarillo */
+   background-color: white; /* Amarillo */
 }
 
 header  img{
@@ -39,46 +39,73 @@ header a{
 
 body{ 
     font-family: sans-serif;
-    background-color:#ddd;
+    background-color:white;
 }
 
 main{
-
+background-color: black;
 }
+
+.slogan {
+    display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+    color: white;
+}
+
 
 .banner {
    display: flex;
    flex-direction: column;
    text-align: center;
    justify-content: center;
-   height: 300px;
-   width: 400px;
+    height: 500px;
    margin: auto;
+   overflow: hidden;
+
 }
+
+.banner h2{
+    color: white;
+}
+
+.banner p{
+    color: white;
+}
+
+
 
 .info{
 
-    height: 500px;
-    padding-bottom:20px ;
+    height: 700px;
+    
     display: flex;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     margin: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
     
+}
+
+.info h2{
+    color: white;
 }
 
 .formulario{
     float: left;
     width: 50%;
-    padding-right: 30px;
     box-sizing: border-box;
+
 }
 
 .formato {
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    margin: 50px;
 }
 
 .formulario .uno input{
@@ -104,6 +131,7 @@ main{
 }
 
 .detalles{
+    
     text-align: center;
     float: right;
     width: 45%;
@@ -124,6 +152,7 @@ main{
 }
 
 .detalles  p {
+    
     padding-left: 5%;
     text-align: center;
     display: inline-block;
@@ -135,7 +164,7 @@ main{
 footer{
     background-color: white;
    text-align: center;
-   padding: 50px;
+   padding: 1%;
 }
 /* ========================================
    MEDIA QUERIES - RESPONSIVE DESIGN
@@ -159,6 +188,20 @@ footer{
 header nav {
     display: flex;
     gap: 10px;
+}
+
+/*“EJERCICIO 6.1” regla css global para controlar que todos los video e imagenes
+se escalen correctamente dentro de su contenedor*/
+
+img,video {
+    /* 1. Controla el ancho */
+    max-width: 100%; 
+    
+    /* 2. Controla la altura */
+    height: auto; 
+    
+    /* 3. Asegura el renderizado como bloque */
+    display: block; 
 }
 
 /* TABLETS (481px - 768px) */
