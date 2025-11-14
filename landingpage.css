@@ -46,7 +46,7 @@ main{
     height: 500px;
 
     /* “EJERCICIO 6.2” cover fue la ellecion final porque en mi caso la imagen no se distorciona y se ve demanesa dinamica y fluida.*/
-    background-image:url("/imagenes/pexels-pixabay-46798.jpg");
+    background-image:url("imagenes/pexels-pixabay-46798.jpg");
     background-size: cover ;
     background-position: center;
    
