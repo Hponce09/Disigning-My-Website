@@ -54,7 +54,11 @@ main{
 }
 
 h1{
-    color: #FFC72C; /* Amarillo */
+    color: white; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    font-size: 3.5em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .hero-content{
@@ -64,13 +68,6 @@ h1{
     gap: 20px;
 }
 
-#hero-content p{
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    width: 500px;
-    color: #ffffff;
-}
 
 
 
@@ -104,13 +101,16 @@ background-color: #FFB800;
 }
 
 .subtitle{
-    
+    text-align: center;
     background-color: #000000; /* Negro */
+    
 }
 
 .subtitle h2{
     color: white; /* Amarillo */
     border-bottom: 3px solid #FFFFFF; /* Línea blanca */
+    display: inline-block;
+    padding: 10px 0;
 }
 
 main #tarjetas{
@@ -119,7 +119,7 @@ main #tarjetas{
     padding-bottom: 3%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
     text-align: center;
     gap: 3%;
 
@@ -130,6 +130,14 @@ main #tarjetas{
 main #tarjetas div{
 
     /*background-image: url(imagenes/logo.png);*/
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: #FFFFFF;
     background-size: cover;
     width: 350px;
@@ -138,22 +146,56 @@ main #tarjetas div{
     border-radius: 8px; 
     border: 3px solid #000000; 
     box-shadow: 0 4px 8px rgba(255, 199, 44, 0.3);
+    overflow: hidden;
     
+}
+
+main #tarjetas div .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none; /* IMPORTANTE - ignora clics en el video */
+}
+
+/* Contenido encima del video */
+main #tarjetas div .contenido-tarjeta {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent; /* Oscurece para leer texto */
+}
+
+main #tarjetas div .contenido-tarjeta h4,
+main #tarjetas div .contenido-tarjeta p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+}
+
+/* Hover SIN cambiar el background */
+#tarjetas div:hover {
+    transform: scale(1.05);
+    /* ELIMINA background-color del hover */
+    border-color: #FFC72C;
+    box-shadow: 0 8px 16px rgba(255, 199, 44, 0.6);
 }
 
 main #tarjetas div{
     color: #333333;
 }
 
-#tarjetas div:hover{
-    transform: scale(1.05);
-    background-color: #FFC72C; /* Amarillo al hover */
-    border-color: #FFC72C; /* Borde amarillo */
-    box-shadow: 0 8px 16px rgba(255, 199, 44, 0.6);
-}
-
-h4{
-    color: #000000;
+h4,p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
 }
 
 footer{
@@ -207,16 +249,7 @@ header nav {
 /*“EJERCICIO 6.1” regla css global para controlar que todos los video e imagenes
 se escalen correctamente dentro de su contenedor*/
 
-img,video {
-    /* 1. Controla el ancho */
-    max-width: 100%; 
-    
-    /* 2. Controla la altura */
-    height: auto; 
-    
-    /* 3. Asegura el renderizado como bloque */
-    display: block; 
-}
+
 
 /* TABLETS (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
