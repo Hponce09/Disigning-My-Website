@@ -5,6 +5,10 @@
 
 }
 
+body{
+    font-family: sans-serif;
+}
+
 h1{ font-size: 3.5em;
 padding-left: 10%;
 padding-right: 10%;
@@ -23,7 +27,7 @@ header{
     align-items: center;
     justify-content: space-between;
    
-   background-color: white; /* Amarillo */
+   background-color: white; 
 }
 
 header  img{
@@ -31,8 +35,8 @@ header  img{
 }
 
 header a{
-     color: #000000; /* Negro */
-    font-weight: 600; /* Negrita */
+     color: #000000; 
+    font-weight: 600; 
     padding: 10px;
     text-decoration: none;
 }
