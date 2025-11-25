@@ -19,7 +19,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   background-color: white; /* Amarillo */
+   background-color: white; 
 }
 
 header  img{
@@ -27,8 +27,8 @@ header  img{
 }
 
 header a{
-    color: #000000; /* Negro */
-    font-weight: 600; /* Negrita */
+    color: #000000; 
+    font-weight: 600; 
     padding: 10px;
     text-decoration: none;
 }
@@ -102,13 +102,13 @@ background-color: #FFB800;
 
 .subtitle{
     text-align: center;
-    background-color: #000000; /* Negro */
+    background-color: #000000; 
     
 }
 
 .subtitle h2{
-    color: white; /* Amarillo */
-    border-bottom: 3px solid #FFFFFF; /* Línea blanca */
+    color: white; 
+    border-bottom: 3px solid #FFFFFF; 
     display: inline-block;
     padding: 10px 0;
 }
@@ -123,7 +123,7 @@ main #tarjetas{
     text-align: center;
     gap: 3%;
 
-    background-color: #000000; /* Fondo negro */
+    background-color: #000000; 
 
 }
 
@@ -150,28 +150,23 @@ main #tarjetas div{
     
 }
 
-main #tarjetas div .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    pointer-events: none; /* IMPORTANTE - ignora clics en el video */
+#tarjetas div:first-child{
+    background-image: url(imagenes/banner4.png);
 }
 
-/* Contenido encima del video */
-main #tarjetas div .contenido-tarjeta {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: transparent; /* Oscurece para leer texto */
+#tarjetas div:nth-child(2){
+    background-image: url(imagenes/banner3.png);
 }
+
+#tarjetas div:nth-child(3){
+    background-image: url(imagenes/banner2.png);
+}
+
+#tarjetas div:last-child{
+    background-image: url(imagenes/banner1.png);
+}
+
+
 
 main #tarjetas div .contenido-tarjeta h4,
 main #tarjetas div .contenido-tarjeta p {
