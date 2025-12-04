@@ -74,8 +74,8 @@ h1{
 .btn-cta {
     display: inline-block; 
     
-    background-color: white; 
-    color: #0A0A0A;             
+    background-color: rgba(3, 3, 113, 0.751); 
+    color: white;             
     text-decoration: none;    
     border: none;             
     border-radius: 8px;       
