@@ -61,6 +61,10 @@ h1{
     padding-right: 10%;
 }
 
+p{
+    color: white;
+}
+
 .hero-content{
    text-align: center;
    display: flex;
