@@ -1,0 +1,23 @@
+{
+    "nav":{
+        "landing":"Landingpage",
+        "schedule":"Schedule",
+        "shop":"Shop",
+        "gallery":"Gallery",
+        "contact":"Contact"
+    },
+    "hero":{
+        "title":"We create champions both on and off the field",
+        "button-call":"Sing up",
+        "categorias":"CATEGORIES"
+    },
+    "testimonios":{
+        "testimonio-one":"My son has improved tremendously, both in his technique and his character. The coaches are excellent, and you can see the care they show the children.",
+        "parent-one":"Mother of a Alevín player",
+        "testimonio-two":"The facilities are fantastic and the atmosphere is very friendly. My daughter is thrilled and looks forward to training every day.",
+        "parent-two":"Father of a Benjamín player",
+        "testimonio-three":"The best part is seeing how the children learn not only football, but also discipline, respect, and teamwork. An incredible experience.",
+        "parent-three":"Mother of a Infantil player"
+
+    }
+}
