@@ -1,0 +1,22 @@
+{
+    "nav":{
+        "landing":"Inicio",
+        "schedule":"Calendario",
+        "shop":"Tienda",
+        "gallery":"Galeria",
+        "contact":"Contacto"
+    },
+    "hero":{
+        "title":"Formamos campeopnes fuera y dentro de la cancha",
+        "button-call":"Inscribete ahora",
+        "categorias":"CATEGORIAS"
+    },
+    "testimonios":{
+        "testimonio-one":"Mi hijo ha mejorado muchísimo tanto en su técnica como en sus valores. Los entrenadores son excelentes y se nota el cariño con el que tratan a los niños.",
+        "parent-one":"Madre de jugador Alevín",
+        "testimonio-two":"Las instalaciones son fantásticas y el ambiente es muy familiar. Mi hija está encantada y cada día espera con ilusión los entrenamientos.",
+        "parent-two":"Padre de jugadora Benjamín",
+        "testimonio-three":"Lo mejor es ver cómo los niños aprenden no solo fútbol, sino también disciplina, respeto y compañerismo. Una experiencia increíble.",
+        "parent-three":"Madre de jugador Infantil"
+    }
+}

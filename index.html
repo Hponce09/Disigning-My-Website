@@ -5,32 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="landingpage.css">
     <script src="https://kit.fontawesome.com/4aee971cc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
     <title>Document</title>
 </head>
 <body>
-   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('header nav');
-    
-    // Toggle del menú
-    menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-    });
-    
-    // Cerrar menú al hacer click en un enlace
-    const navLinks = nav.querySelectorAll('a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            nav.classList.remove('active');
-        });
-    });
-});
-</script>
 
     <header class="container">
         <div>
-            <img src="imagenes/logo.png" alt="">
+            <h2>Newbarcino F.C.</h2>
         </div>
         
         <!-- Botón hamburguesa -->
@@ -41,11 +23,24 @@
         </div>
         
         <nav>
-            <a href="index.html">Landing Page</a>
-            <a href="#">Calendario</a>
-            <a href="#">Tienda</a>
-            <a href="#">Galeria</a>
-            <a href="contac.html">Contacto</a>
+
+            <div id="lenguajes" class="lenguajes">
+                <div class="flag-item" data-lang="es">
+                    <span class="fi fi-es"></span>
+                </div>
+                <div class="flag-item" data-lang="in">
+                    <span class="fi fi-gb"></span>
+                </div>
+                <div class="flag-item" data-lang="ct">
+                    <span class="fi fi-es-ct"></span>  
+                </div>
+            </div>         
+
+            <a href="index.html" data-section="nav" data-value="landing">Landing Page</a>
+            <a href="#" data-section="nav" data-value="schedule">Calendario</a>
+            <a href="#" data-section="nav" data-value="shop">Tienda</a>
+            <a href="#" data-section="nav" data-value="gallery">Galeria</a>
+            <a href="contac.html" data-section="nav" data-value="contact">Contacto</a>
         </nav>
     </header>
 
@@ -53,13 +48,13 @@
     <main class="container">
         <section id="hero-content">
             <div class="hero-content">
-                <h1>Formamos campeones dentro y fuera del campo</h1>
-                <a href="#incribete" class="btn-cta">Inscribete ahora</a>
+                <h1 data-section="hero" data-value="title">Formamos campeopnes fuera y dentro de la cancha</h1>
+                <a href="#incribete" class="btn-cta" data-section="hero" data-value="button-call">Inscribete ahora</a>
             </div>
         </section>
 
         <div class="subtitle">
-                <h2>CATEGORIAS</h2>
+                <h2 data-section="hero" data-value="categorias">CATEGORIAS</h2>
         </div>
 
         <section id="tarjetas">
@@ -99,6 +94,52 @@
             </div>
                
         </section>
+
+
+                <!-- TESTIMONIOS -->
+        <section id="testimonios">
+            <div class="container">
+                <h2 class="section-title">Lo que dicen las familias</h2>
+                <div class="testimonios-grid">
+                    <div class="testimonio-card">
+                        <div class="testimonio-content">
+                            <p data-section="testimonios" data-value="testimonio-one">Mi hijo ha mejorado muchísimo tanto en su técnica como en sus valores. Los entrenadores son excelentes y se nota el cariño con el que tratan a los niños.</p>
+                            <div class="testimonio-autor">
+                                <div class="testimonio-avatar">MG</div>
+                                <div class="testimonio-info">
+                                    <h5>María García</h5>
+                                    <span data-section="testimonios" data-value="parent-one">Madre de jugador Alevín</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-content">
+                            <p data-section="testimonios" data-value="testimonio-two">Las instalaciones son fantásticas y el ambiente es muy familiar. Mi hija está encantada y cada día espera con ilusión los entrenamientos.</p>
+                            <div class="testimonio-autor">
+                                <div class="testimonio-avatar">JL</div>
+                                <div class="testimonio-info">
+                                    <h5>Jorge López</h5>
+                                    <span data-section="testimonios" data-value="parent-two">Padre de jugadora Benjamín</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonio-card">
+                        <div class="testimonio-content">
+                            <p data-section="testimonios" data-value="testimonio-three">Lo mejor es ver cómo los niños aprenden no solo fútbol, sino también disciplina, respeto y compañerismo. Una experiencia increíble.</p>
+                            <div class="testimonio-autor">
+                                <div class="testimonio-avatar">AS</div>
+                                <div class="testimonio-info">
+                                    <h5>Ana Sánchez</h5>
+                                    <span data-section="testimonios" data-value="parent-three">Madre de jugador Infantil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     </main>
 
@@ -115,5 +156,7 @@
         </div>
     </footer>
     
+    <script src="js/script.js"></script>
+
 </body>
 </html>

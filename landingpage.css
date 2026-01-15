@@ -19,11 +19,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   background-color: white; 
+    background-color: white;
+    padding: 10px 20px;
 }
 
-header  img{
-    width: 100px;
+/* Asegura que el nav también use flex */
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 header a{
@@ -31,6 +35,30 @@ header a{
     font-weight: 600; 
     padding: 10px;
     text-decoration: none;
+    white-space: nowrap;
+}
+
+.lenguajes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid #ddd;
+}
+
+.flag-item{
+    cursor: pointer;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.flag-item:hover{
+    transform: scale(1.1);
+}
+
+.flag-item span{
+    font-size: 1.5em;
 }
 
 main{
@@ -46,7 +74,7 @@ main{
     height: 500px;
 
     /* “EJERCICIO 6.2” cover fue la ellecion final porque en mi caso la imagen no se distorciona y se ve demanesa dinamica y fluida.*/
-    background-image:url("imagenes/pexels-pixabay-46798.jpg");
+    background-image:url("imagenes/imagenEditada.png");
     background-size: cover ;
     background-position: center;
     
@@ -59,6 +87,10 @@ h1{
     font-size: 3.5em;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+p{
+    color: white;
 }
 
 .hero-content{
@@ -74,8 +106,8 @@ h1{
 .btn-cta {
     display: inline-block; 
     
-    background-color: white; 
-    color: #0A0A0A;             
+    background-color: rgba(3, 3, 113, 0.751); 
+    color: white;             
     text-decoration: none;    
     border: none;             
     border-radius: 8px;       
@@ -175,6 +207,82 @@ main #tarjetas div .contenido-tarjeta p {
     margin: 5px 0;
 }
 
+/* TESTIMONIOS */
+#testimonios {
+    padding: 80px 20px;
+    background: black;
+}
+
+.section-title{
+    color: white;
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.testimonio-card {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.testimonio-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 5em;
+    color: #0066cc;
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
+.testimonio-content {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonio-content p {
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.testimonio-autor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonio-avatar {
+    width: 50px;
+    height: 50px;
+    background: #0066cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.testimonio-info h5 {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.testimonio-info span {
+    color: #999;
+    font-size: 0.9em;
+}
+
 /* Hover SIN cambiar el background */
 #tarjetas div:hover {
     transform: scale(1.05);
@@ -187,11 +295,18 @@ main #tarjetas div{
     color: #333333;
 }
 
-h4,p{
+#tarjetas h4{
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin: 5px 0;
 }
+
+#tarjetas p{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 5px 0;
+}
+
 
 footer{
     background-color: white; /* Amarillo */

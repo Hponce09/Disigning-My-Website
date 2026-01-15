@@ -1,0 +1,23 @@
+{
+    "nav":{
+        "landing":"Inici",
+        "schedule":"Calendari",
+        "shop":"Botiga",
+        "gallery":"Galeri",
+        "contact":"Contacte"
+    },
+    "hero":{
+        "title":"Formem campions fora i dins de la pista",
+        "button-call":"Inscriu-te ara",
+        "categorias":"CATEGORIES"
+    },
+    "testimonios":{
+        "testimonio-one":"El meu fill ha millorat molt tant en la tècnica com en els valors. Els entrenadors són excel·lents i es nota l'afecte amb què tracten els nens.",
+        "parent-one":"Mare de jugador Aleví",
+        "testimonio-two":"Les instal·lacions són fantàstiques i l´ambient és molt familiar. La meva filla està encantada i cada dia espera amb il·lusió els entrenaments.",
+        "parent-two":"Pare d'un jugador de Benjamí",
+        "testimonio-three":"La millor part és veure com els nens aprenen no només futbol, sinó també disciplina, respecte i treball en equip. Una experiència increïble.",
+        "parent-three":"Mare de jugador Infantil"
+    }
+
+}
