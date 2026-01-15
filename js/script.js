@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const textsToChange = document.querySelectorAll("[data-section]")
 
 const changeLanguage = async (language) =>{
-    const requestJson = await fetch(`../lenguajes/${language}.json`)
+    const requestJson = await fetch(`./lenguajes/${language}.json`)
     const texts = await requestJson.json()
 
     //console.log(texts)
