@@ -1,5 +1,12 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 h1{ font-size: 3.5em;
@@ -12,6 +19,7 @@ a{font-size: 1.5em;}
 .container{
     max-width: 1600px;
     margin: auto;
+    width: 100%;
     
 }
 
@@ -21,6 +29,7 @@ header{
     justify-content: space-between;
     background-color: white;
     padding: 10px 20px;
+    margin: 0;
 }
 
 /* Asegura que el nav también use flex */
@@ -64,6 +73,8 @@ header a{
 main{
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -77,6 +88,8 @@ main{
     background-image:url("imagenes/imagenEditada.png");
     background-size: cover ;
     background-position: center;
+    margin: 0;
+    padding: 0;
     
    
 }
@@ -135,6 +148,8 @@ background-color: #FFB800;
 .subtitle{
     text-align: center;
     background-color: #000000; 
+    margin: 0; 
+    padding: 20px 0;
     
 }
 
@@ -155,7 +170,8 @@ main #tarjetas{
     text-align: center;
     gap: 3%;
 
-    background-color: #000000; 
+    background-color: #000000;
+    margin: 0;
 
 }
 
@@ -354,6 +370,31 @@ header nav {
 header nav {
     display: flex;
     gap: 10px;
+}
+
+/* Seccion de video a lo ancho total */
+#video-promocional {
+    background-color: #000000; /* Fondo negro total */
+    width: 100%;
+    padding: 60px 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor interno para que el titulo y video no se peguen a los bordes */
+.video-inner-container {
+    max-width: 1200px; /* O el ancho que prefieras */
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.video-frame {
+    max-width: 800px; 
+    margin: 0 auto; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); /* Sombra clara sobre fondo negro */
 }
 
 /*“EJERCICIO 6.1” regla css global para controlar que todos los video e imagenes
