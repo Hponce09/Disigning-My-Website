@@ -45,6 +45,21 @@ header a{
     padding: 10px;
     text-decoration: none;
     white-space: nowrap;
+
+    position: relative;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+
+header a:hover{
+    border-bottom: 3px solid #000000; 
+    transform: translateY(-3px);
+}
+
+header a.active{
+    border-bottom: 3px solid #000000;
+    font-weight: 700;
 }
 
 .lenguajes{
@@ -397,6 +412,84 @@ header nav {
     box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); /* Sombra clara sobre fondo negro */
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1000;
+    
+    opacity: 0;
+    transform: translateY(-10px);
+    visibility: hidden;
+    
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f8f8;
+    color: #000000;
+    transform: translateX(5px);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.logo{
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logo:hover{
+    color: #333;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
 /*“EJERCICIO 6.1” regla css global para controlar que todos los video e imagenes
 se escalen correctamente dentro de su contenedor*/
 
@@ -476,6 +569,22 @@ se escalen correctamente dentro de su contenedor*/
     footer {
         padding: 35px 20px;
     }
+
+    /* Dropdown en móviles */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        box-shadow: none;
+        background-color: #f8f8f8;
+        margin-top: 5px;
+    }
+
 }
 
 /* MÓVILES (máx 480px) */
@@ -594,5 +703,20 @@ se escalen correctamente dentro de su contenedor*/
 
     .redes-sociales i {
         font-size: 1.8em;
+    }
+
+    /* Dropdown en móviles */
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        box-shadow: none;
+        background-color: #f8f8f8;
+        margin-top: 5px;
     }
 }

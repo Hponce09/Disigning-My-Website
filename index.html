@@ -6,13 +6,18 @@
     <link rel="stylesheet" href="landingpage.css">
     <script src="https://kit.fontawesome.com/4aee971cc0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
-    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/apple-touch-icon.png">
+    <title>Newbarcino F.C. - Club de Fútbol Formativo</title>
 </head>
 <body>
 
     <header class="container">
         <div>
-            <h2>Newbarcino F.C.</h2>
+            <h2 class="logo">Newbarcino F.C.</h2>
         </div>
         
         <!-- Botón hamburguesa -->
@@ -36,11 +41,20 @@
                 </div>
             </div>         
 
-            <a href="index.html" data-section="nav" data-value="landing">Landing Page</a>
-            <a href="#" data-section="nav" data-value="schedule">Calendario</a>
+            <a href="index.html" class="active" data-section="nav" data-value="landing">Landing Page</a>
+            <div class="dropdown">
+                <a href="#" data-section="nav" data-value="schedule">Calendario</a>
+                <div class="dropdown-menu">
+                    <a href="#benjamin">Benjamín</a>
+                    <a href="#alevin">Alevín</a>
+                    <a href="#infantil">Infantil</a>
+                    <a href="#cadete">Cadete</a>
+                </div>
+            </div>
+            
             <a href="#" data-section="nav" data-value="shop">Tienda</a>
             <a href="#" data-section="nav" data-value="gallery">Galeria</a>
-            <a href="contac.html" data-section="nav" data-value="contact">Contacto</a>
+            <a href="contac.html"  data-section="nav" data-value="contact">Contacto</a>
         </nav>
     </header>
 
